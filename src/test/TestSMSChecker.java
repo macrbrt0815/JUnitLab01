@@ -17,6 +17,7 @@ public class TestSMSChecker {
         assertTrue(SMSChecker.checkRegister("REGISTER"));
         assertFalse(SMSChecker.checkRegister(" register"));
         assertFalse(SMSChecker.checkRegister("register "));
+        assertFalse(SMSChecker.checkRegister("regi ster"));
         assertFalse(SMSChecker.checkRegister("random"));
         assertFalse(SMSChecker.checkRegister(""));
     }
