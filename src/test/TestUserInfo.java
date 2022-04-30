@@ -84,6 +84,10 @@ public class TestUserInfo {
         assertFalse(SMSChecker.checkUserInfo("1998-05-22,Makati City"));
         assertFalse(SMSChecker.checkUserInfo("Juan Dela Cruz,Makati City"));
         assertFalse(SMSChecker.checkUserInfo("Juan Dela Cruz,1998-05-22"));
+
+        assertFalse(SMSChecker.checkUserInfo(",,"));
+        assertFalse(SMSChecker.checkUserInfo(" , , "));
+        assertFalse(SMSChecker.checkUserInfo(""));
     }
 
 }
