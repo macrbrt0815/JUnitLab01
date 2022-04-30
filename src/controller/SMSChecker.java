@@ -132,6 +132,7 @@ public class SMSChecker {
                     }
                 }
             } else {
+                //verify if month has 30/31 days
                 if (Integer.parseInt(month) == 4 || Integer.parseInt(month) == 6 || Integer.parseInt(month) == 9 || Integer.parseInt(month) == 11) {
                     if (Integer.parseInt(day) > 30) {
                         validBirthdate = false;
